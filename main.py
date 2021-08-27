@@ -2,7 +2,6 @@ from datetime import datetime
 
 
 # 2. Check if today matches a birthday in the birthdays.csv
-# HINT 1: Create a tuple from today's month and day using datetime. e.g.
 today = datetime.now()
 today_tuple = (today.month, today.day)
 
