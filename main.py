@@ -12,7 +12,7 @@ data = pandas.read_csv("birthdays.csv")
 #     (birthday_month, birthday_day): data_row
 # }
 #Dictionary comprehension template for pandas DataFrame looks like this:
-# new_dict = {new_key: new_value for (index, data_row) in data.iterrows()}
+new_dict = {new_key: new_value for (index, data_row) in data.iterrows()}
 #e.g. if the birthdays.csv looked like this:
 # name,email,year,month,day
 # Angela,angela@email.com,1995,12,24
