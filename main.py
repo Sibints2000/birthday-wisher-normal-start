@@ -1,7 +1,6 @@
 from datetime import datetime
 import pandas
 
-# 2. Check if today matches a birthday in the birthdays.csv
 today = datetime.now()
 today_tuple = (today.month, today.day)
 
