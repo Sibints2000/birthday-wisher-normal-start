@@ -8,8 +8,6 @@ today_tuple = (today.month, today.day)
 data = pandas.read_csv("birthdays.csv")
 birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
 
-
-
 #HINT 4: Then you could compare and see if today's month/day tuple matches one of the keys in birthday_dict like this:
 # if (today_month, today_day) in birthdays_dict:
 
