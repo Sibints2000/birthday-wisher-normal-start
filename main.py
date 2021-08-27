@@ -18,7 +18,9 @@ if today_tuple in birthdays_dict:
         contents = letter_file.read()
         contents.replace("[NAME]", birthdays_person["name"])
 
-    with smtplib.SMTP(smtp.)
+    with smtplib.SMTP("smtp.gmail.com") as connection:
+        connection.starttls()
+
 
 # 4. Send the letter generated in step 3 to that person's email address.
 # HINT 1: Gmail(smtp.gmail.com), Yahoo(smtp.mail.yahoo.com), Hotmail(smtp.live.com), Outlook(smtp-mail.outlook.com)
