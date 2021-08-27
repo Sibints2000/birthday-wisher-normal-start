@@ -8,11 +8,11 @@ today_tuple = (today.month, today.day)
 data = pandas.read_csv("birthdays.csv")
 
 # HINT 3: Use dictionary comprehension to create a dictionary from birthday.csv that is formated like this:
-# birthdays_dict = {
-#     (birthday_month, birthday_day): data_row
-# }
+birthdays_dict = {
+    (birthday_month, birthday_day): data_row
+}
 #Dictionary comprehension template for pandas DataFrame looks like this:
-new_dict = {new_key: new_value for (index, data_row) in data.iterrows()}
+birthdays_dict = {(data_row["month"], data_row["day"]): new_value for (index, data_row) in data.iterrows()}
 #e.g. if the birthdays.csv looked like this:
 # name,email,year,month,day
 # Angela,angela@email.com,1995,12,24
