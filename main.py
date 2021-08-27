@@ -14,10 +14,6 @@ if today_tuple in birthdays_dict:
         contents = letter_file.read()
         contents.replace("[NAME]", birthdays_person["name"])
 
-# 3. If there is a match, pick a random letter (letter_1.txt/letter_2.txt/letter_3.txt) from letter_templates and replace the [NAME] with the person's actual name from birthdays.csv
-
-# HINT 3: Use the replace() method to replace [NAME] with the actual name. https://www.w3schools.com/python/ref_string_replace.asp
-
 # 4. Send the letter generated in step 3 to that person's email address.
 # HINT 1: Gmail(smtp.gmail.com), Yahoo(smtp.mail.yahoo.com), Hotmail(smtp.live.com), Outlook(smtp-mail.outlook.com)
 # HINT 2: Remember to call .starttls()
