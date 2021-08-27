@@ -11,6 +11,7 @@ if today_tuple in birthdays_dict:
     file_path = f"letter_templates/letter_{random.randint(1, 3)}.txt"
     with open(file_path) as letter_file:
         contents = letter_file.read()
+        contents.replace("[NAME]", )
 
 
 # 3. If there is a match, pick a random letter (letter_1.txt/letter_2.txt/letter_3.txt) from letter_templates and replace the [NAME] with the person's actual name from birthdays.csv
