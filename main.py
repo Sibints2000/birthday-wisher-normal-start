@@ -5,8 +5,7 @@ import pandas
 today = datetime.now()
 today_tuple = (today.month, today.day)
 
-# HINT 2: Use pandas to read the birthdays.csv
-pandas.read_csv("birthdays.csv")
+data = pandas.read_csv("birthdays.csv")
 
 # HINT 3: Use dictionary comprehension to create a dictionary from birthday.csv that is formated like this:
 # birthdays_dict = {
