@@ -1,6 +1,10 @@
 from datetime import datetime
 import pandas
 import random
+import smtplib
+
+MY_EMAIL = "thurrappattujoseph@gmail.com"
+MY_PASSWORD = "thurrappattu@007"
 
 today = datetime.now()
 today_tuple = (today.month, today.day)
@@ -13,6 +17,8 @@ if today_tuple in birthdays_dict:
     with open(file_path) as letter_file:
         contents = letter_file.read()
         contents.replace("[NAME]", birthdays_person["name"])
+
+    with smtplib.SMTP(smtp.)
 
 # 4. Send the letter generated in step 3 to that person's email address.
 # HINT 1: Gmail(smtp.gmail.com), Yahoo(smtp.mail.yahoo.com), Hotmail(smtp.live.com), Outlook(smtp-mail.outlook.com)
